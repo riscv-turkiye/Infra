@@ -4,5 +4,6 @@
 
 { ... }:
 {
+  boot.isNspawnContainer = true; # currently on a nspawn container on my vps
   nixpkgs.hostPlatform = "aarch64-linux";
 }

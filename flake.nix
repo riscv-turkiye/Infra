@@ -115,6 +115,7 @@
             with pkgs;
             (octodns.withProviders (ps: [
               self-pkgs.octodns-cloudflare
+              octodns-providers.bind
             ]));
 
           octodns-cloudflare = pkgs.python3Packages.callPackage ./pkgs/octodns-cloudflare.nix {

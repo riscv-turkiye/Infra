@@ -6,7 +6,8 @@
 {
   services.nginx = {
     enable = true;
-    virtualHosts."_" = {
+    virtualHosts."server1.riscv.alper-celik.dev" = {
+      enableACME = true;
       default = true;
 
       locations."/" = {

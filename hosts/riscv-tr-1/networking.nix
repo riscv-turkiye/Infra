@@ -5,6 +5,7 @@
 { ... }:
 {
   networking.useHostResolvConf = false;
+  networking.hostName = "riscv-tr-1";
   networking.nameservers = [
     "1.1.1.1"
   ];

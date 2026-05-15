@@ -27,7 +27,7 @@ with lib;
                 add_header Alt-Svc 'h3=":443"; ma=86400';
               ''
             );
-
+            forceSSL = true;
             quic = true;
             http3 = true;
 

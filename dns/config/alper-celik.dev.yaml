@@ -6,3 +6,6 @@ server1.riscv:
 jitsi.riscv:
   type: CNAME
   value: server1.riscv.alper-celik.dev.
+wiki.riscv:
+  type: CNAME
+  value: server1.riscv.alper-celik.dev.

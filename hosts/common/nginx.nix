@@ -51,6 +51,13 @@ with lib;
     };
 
     services.nginx = {
+
+      commonHttpConfig = ''
+        set_real_ip_from 192.168.100.11;
+        set_real_ip_from 192.168.100.1;
+        real_ip_header X-Forwarded-For;
+      '';
+
       package = pkgs.nginxMainline;
 
       enableQuicBPF = true;
